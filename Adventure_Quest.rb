@@ -1,8 +1,9 @@
                                                   
 ################################## H O U S E  K E E P I N G ##################################
-
-
 require 'colorize'
+
+require_relative "./place_methods/bar"
+require_relative "./place_methods/town"
 
 def continue 
   
@@ -15,6 +16,7 @@ def continue
   end
   end
 end
+
 
 ################################## T I T L E  S C R E E N ##################################
 
@@ -39,9 +41,9 @@ continue
 puts "Greg: Hail and well met, traveller!"
 puts ""
 puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-puts "1. Um...who are you?"
-puts "2. Actually, my bus broke down – #Transportnsw did me dirty once again"
-puts "3. I AM READY FOR AN EPIC ADVENTURE!!"
+puts "➢ 1. Um...who are you?"
+puts "➢ 2. Actually, my bus broke down – #Transportnsw did me dirty once again"
+puts "➢ 3. I AM READY FOR AN EPIC ADVENTURE!!"
 puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 while true
@@ -84,10 +86,11 @@ puts "#{name}: Well, that sure was weird. He reminded me of my uncle somehow."
 continue
 puts "#{name}: Now, where should I go?"
 
-puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-puts "1. The bar!"
-puts "2. The town!"
-puts "3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. Dont get ahead of urself u excitable bish"
+puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+" 
+puts "➢ 1. The bar!                                                           "
+puts "➢ 2. The town!                                                          "
+puts "➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. Dont get ahead of urself u excitable bish"
+puts "➢ 4. Exit                                                               "
 puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 while true
@@ -95,13 +98,17 @@ where_to_go = gets.chomp
 case where_to_go
   when "1"
     puts "I'm pretty thirsty – let's head to the bar"
+    bar_story name
     break
   when "2"
     puts "I'm feeling some local culture, let's head to the markets"
+    town_story name
     break
   when "3"
     puts "I've been couped up in the city for too long, lets get some fresh air!"
   break
+  when "4"
+    puts "*******WIP*******" ##############################
   else 
     puts "Hey genius, press 1, 2 or 3!"
   next
