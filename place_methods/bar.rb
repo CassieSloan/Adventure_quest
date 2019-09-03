@@ -40,7 +40,7 @@ puts "                   _SS ,-           -  SS_                  "
 puts "                  :-.|  _    - .-   _  |.-;                " 
 puts "                  :\(; ''-._.'._.- `'' |)/;               "  
 puts "                   \`|  , o       o .  |'/               "   
-puts "                    :     -'   `-     ;              "    
+puts "                     :     -'   `-     ;              "    
 puts "                      ;.              :                "
 puts "                      : `    ._.    ' ;                     "
 puts "                    .sSb   ._____.   dSs.                   "
@@ -68,7 +68,7 @@ puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 ####################################### D R I N K  S E L E C T #######################################
 
 
-while true
+    while true
     drink_choice = gets.chomp
     case drink_choice
       when "1"
@@ -78,13 +78,30 @@ while true
         puts "2. On second thoughts, maybe I'll have that hot chocolate"
         puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
         alcohol = gets.chomp
-            if alcohol = "1"
+            if alcohol == "1"
                 puts "Bartender: *chuckes* So it will be...enjoy."
-            elsif alcohol = "2"
+                continue
+                puts "˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@"
+                puts " ҉。✧°。@°❋   DaArNn  Eet°❋ 。°。°。✧°@。°"
+                puts "°✧。@°。°。° ҉。°。 ҉°❋ ✧。@°。゜ ҉✧。°。°。。"
+                puts "°。° ҉。✧°Iii。@°❋ 。°。°。✧°。゜。✧❋ °。°。°@。"
+                puts "°。✼°。✧°。 ҉°。°✧@。° ҉。✧°aAm。゜ ҉。°。°✧。°。✧"
+                puts "°。✧ ҉°。°。°。DRRrOOnKKKK!!°❋ 。°。°。@゜❋ 。°。 "
+                puts "°。°❋ 。✧@°。°。°。° ҉。✧°。゜。°✧。@°。°。。°。°。✧"
+                continue
+                puts "Bartender: Need somewhere to lie down?"
+                continue
+                puts "name: YyEazzsh...Pleezshh"
+                continue
+                puts "name: Zzzz....Zzzz...Zzzz"
+                puts "**You slept the day and night away at the tavern**"
+                break
+            elsif alcohol == "2"
                 puts "Bartender: A wise choice, friend. Have some marshmallows on the house"
             else 
                 puts "Invalid option! Press 1 or 2!"
                 next
+            end
       when "2"
         puts "Bartender: What is this *choklut* you speak of?"
         continue
@@ -93,13 +110,23 @@ while true
       when "3"
         puts "Bartender: I'm glad you asked! Today is pasteurized milk of possum shaken with Witch's ether, sprinkled with my very own daughter's dandruff."
         continue
-        puts "name: "
+        puts "name: I'm...I'm not sure if you're being rude or this is real"
+        continue
+        puts "Bartender: It's a local delicacy..."
+        continue
+        puts "name: I don't think I'm worthy of such a bourgeoisie drink"
+        continue
+        puts "Bartender: You would be right"
       break
       else 
         puts "Hey genius, press 1, 2 or 3!"
       next
       end
     end
+
+
+
+    
 end
 
 bar_story
