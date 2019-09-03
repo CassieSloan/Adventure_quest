@@ -102,6 +102,7 @@ case where_to_go
     break
   when "2"
     puts "I'm feeling some local culture, let's head to the markets"
+    continue
     town_story name
     break
   when "3"
