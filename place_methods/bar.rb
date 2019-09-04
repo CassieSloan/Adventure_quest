@@ -17,15 +17,15 @@ end
 continue
 def bar_story name
     puts"                                                                            ".colorize(:red).on_black
-    puts"   ███            ▄████████  ▄██▄     ▄████████    ▄████████ ███▄▄▄▄        ".colorize(:red).on_black
+    puts"   ███            ▄████████ ▄██▄         ▄████████    ▄████████ ███▄▄▄▄        ".colorize(:red).on_black
     puts"   ▀█████████▄   ███    ███ ███    ███   ███    ███   ███    ███ ███▀▀▀██▄  ".colorize(:red).on_black
     puts"      ▀███▀▀██   ███    ███ ███    ███   ███    █▀    ███    ███ ███   ███  ".colorize(:red).on_black
     puts"       ███   ▀   ███    ███ ███    ███  ▄███▄▄▄      ▄███▄▄▄▄██▀ ███   ███  ".colorize(:red).on_black
-    puts"      ███     ▀███████████ ███    ███ ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   ███   ███   ".colorize(:red).on_black
-    puts"      ███       ███    ███ ███    ███   ███    █▄  ▀███████████ ███   ███   ".colorize(:red).on_black
-    puts"      ███       ███    ███ ███    ███   ███    ███   ███    ███ ███   ███   ".colorize(:red).on_black
-    puts"     ▄████▀     ███    █▀   ▀██████▀    ██████████   ███    ███  ▀█   █▀    ".colorize(:red).on_black
-    puts"                                                     ███    ███             ".colorize(:red).on_black
+    puts"       ███     ▀███████████ ███    ███ ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   ███   ███   ".colorize(:red).on_black
+    puts"       ███       ███    ███ ███    ███   ███    █▄  ▀███████████ ███   ███   ".colorize(:red).on_black
+    puts"       ███       ███    ███ ███    ███   ███    ███   ███    ███ ███   ███   ".colorize(:red).on_black
+    puts"      ▄████▀     ███    █▀   ▀██████▀    ██████████   ███    ███  ▀█   █▀    ".colorize(:red).on_black
+    puts"                                                      ███    ███             ".colorize(:red).on_black
     puts"                                                                            ".colorize(:red).on_black
     puts ""
         continue
@@ -93,7 +93,9 @@ def bar_story name
                     puts "#{name}: YyEazzsh...Pleezshh"
                     continue
                     puts "#{name}: Zzzz....Zzzz...Zzzz"
+                    continue
                     puts "**You slept the day and night away at the tavern**"
+                    continue
                     break
                 elsif alcohol == "2" ########### ALTERNATE ########
                     puts "Bartender: A wise choice, friend. Have some marshmallows on the house"
@@ -130,7 +132,7 @@ def bar_story name
     puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
     puts "➢ 1. Chat up the beautiful lady down the bar"
     puts "➢ 2. Speak to the old man in the corner"
-    puts "➢ 3. Leave the bar"
+    puts "➢ 3. Back to main street"
     puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
     while true

@@ -17,7 +17,6 @@ def continue
   end
 end
 
-
 ################################## T I T L E  S C R E E N ##################################
 
 puts "█████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗████████╗██╗   ██╗██████╗ ███████╗     ██████╗ ██╗   ██╗███████╗███████╗████████╗"
@@ -107,6 +106,7 @@ while true
   case where_to_go
     when "1"
       puts "I'm pretty thirsty – let's head to the bar"
+      continue
       bar_story name
       next
     when "2"

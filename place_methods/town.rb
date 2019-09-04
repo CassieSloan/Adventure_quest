@@ -42,7 +42,7 @@ def town_story name
         puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
         puts "➢ 1. Fortune teller"
         puts "➢ 2. Postions stand"
-        puts "➢ 3. *cassie has drained the creative juices for TUESDAY. Try again tomorrow"
+        puts "➢ 3. Back to main street"
         puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
             town_choice = gets.chomp
         case town_choice
@@ -79,7 +79,7 @@ def town_story name
                     puts "Fortune teller: How fortunate – let us test your luck"
                     continue
                     puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
-                    puts "PRESS ENTER WHEN YOU ARE READY TO RECEIVE YOUR FORTUNE"
+                    puts "PRESS ENTER TO TRY YOUR LUCK AND RECEIVE YOUR FORTUNE"
                     puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
                     continue
                     random_number = rand 10 
@@ -132,6 +132,42 @@ def town_story name
                 if potions_choice == "1"
                     puts "Potions seller: Would you like to find out"
                     continue
+                    puts "#{name}: I don't know... will I die?"
+                    continue
+                    puts "Potions seller: With your constitution...death might be preferable to what these potions can do..."
+                    continue    
+                        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                        puts "➢ 1. Glug glug, thug!"
+                        puts "➢ 2. On second thoughts, I think I'll pass."
+                        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                        drink_potions = gets.chomp
+                    
+                        if drink potions == "1"
+                            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                            puts "PRESS ENTER TO TRY YOUR LUCK AND RECEIVE YOUR FORTUNE"
+                            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                            random_number = rand 10 
+                            puts random_number
+                            case random_number
+                            when  0..3 
+                                puts "Fortune teller: Oooh. This doesn't look too good at all! Soon you will be caught in the rain with holes in your shoes, and your socks will get all soggy! Also you will drink milk in your fridge that has gone sour...additionally, the general store will be out of your favourite mi-goreng flavour. Bummer! "
+                            when 4..7
+                                puts "Fortune teller: Mediocrity is your middle name. Fortunately, or unfortunately, depending on how you look at it; your near future will lack anything new or exciting. Stay comfy in that comfort zone, chum!"
+                            when 8..10
+                                puts "Fortune teller: OoOoOOoooH yes! I see it! You are very fortunate indeed! Your dreams are on their way to coming true! You will find luck and contentment in your career, love life, family and most all other areas in your life! Except for your local government...not even I can fix that, darling."
+                            end
+                            continue
+                        elsif
+                        else
+                        end
+                            
+                    
+                    #pick random potion or opt out
+                    #rng potion outcome
+                    #fin
+
+
+
                 elsif potions_choice == "2"
                     puts "Potions seller: I'm sorry, bun-what-now?"
                     continue
@@ -142,7 +178,7 @@ def town_story name
 
 
         when 
-            "3"
+            "3" back to main st
             puts
 
         
