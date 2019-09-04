@@ -258,15 +258,9 @@ def town_story name
                     puts "Hey genius, press 1 or 2!"
                 end
         when 
-            "3" #exit/back to main street
-            puts
-
-        
+            "3" 
+            puts "#{name}: Let's head back to where Greg dissapeared..."
+            break
         end
     end
-
-
-
-
-
 end

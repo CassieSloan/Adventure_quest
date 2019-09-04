@@ -16,9 +16,7 @@ def continue
   end
   end
 end
-
 ################################## T I T L E  S C R E E N ##################################
-
 puts "
       █████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗████████╗██╗   ██╗██████╗ ███████╗     ██████╗ ██╗   ██╗███████╗███████╗████████╗
      ██╔══██╗██╔══██╗██║   ██║██╔════╝████╗  ██║╚══██╔══╝██║   ██║██╔══██╗██╔════╝    ██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
@@ -63,7 +61,9 @@ while true
 end
 end
 
-puts "In any case, may I ask your name?"
+puts "
+In any case, may I ask your name?
+"
 
 while true
 name = gets.chomp
@@ -92,14 +92,15 @@ puts "psst, it's me Greg. I'm talking to you from the Astral plane. Press 'enter
 continue
 puts "#{name}: Well, that sure was weird. He reminded me of my uncle somehow."
 continue
-
+######### A D V E N T U R E  S T A R T S ########
 while true
 
   puts "#{name}: Now, where should I go?
    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
    ➢ 1. The bar!                                                           
    ➢ 2. The town!                                                          
-   ➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. Dont get ahead of urself u excitable bish
+   ➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. 
+        Dont get ahead of urself u excitable bish
    ➢ 4. Exit                                                               
    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
   where_to_go = gets.chomp
@@ -128,8 +129,3 @@ end
 
   continue
 
-
-################################## A D V E N T U R E  S T A R T S ##################################
-
-#**bar methods
-#** town methods
