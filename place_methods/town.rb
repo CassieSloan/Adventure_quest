@@ -257,9 +257,8 @@ def town_story name
                 else 
                     puts "Hey genius, press 1 or 2!"
                 end
-        when 
-            "3" 
-            puts "#{name}: Let's head back to where Greg dissapeared..."
+        when "3" ######## EXIT TOWN ############
+            puts "#{name}: Let's head back to where Greg dissapeared..." 
             break
         end
     end

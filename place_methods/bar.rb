@@ -70,7 +70,6 @@ def bar_story name
 
     ####################################### D R I N K  S E L E C T #######################################
 
-
         while true
         drink_choice = gets.chomp
         case drink_choice
@@ -136,18 +135,16 @@ def bar_story name
 
         ####################################### N E X T  C H O I C E #######################################
 
-    
-
     while true
-            puts "#{name}: What should we do?
+        puts "#{name}: What should we do?
         +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
         ➢ 1. Chat up the beautiful lady down the bar
         ➢ 2. Speak to bar tender again
         ➢ 3. Back to main street
         +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-            bar_choice = gets.chomp
-            case bar_choice
-            when "1"
+        bar_choice = gets.chomp
+        case bar_choice
+        when "1"
             puts "She looks like good company!"
             continue
             puts "
@@ -179,69 +176,73 @@ def bar_story name
            puts "Sorry, I didn't mean to offend."
            continue
            puts "Princess Ascii: do you want to play a game?"
-           puts 
-            "
+           puts "
             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
             ➢ 1. Who are you, Jigsaw?
             ➢ 2. Sure!
             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-            lady_game = gets.chomp
-                if lady_game == "1" ########### D O N T  P L A Y########
-                    puts "Princess Ascii: He's one of my biggest inspirations to be honest. How do you feel about termultuous torture and totalitarianism?"
-                    continue
-                    puts "#{name}: I think I'll pass...(YIKES)."
-                    continue
-                    puts "Princess Ascii: Suit yourself, plebian."
-                    continue    
-                    puts "#{name}: I think we dodged a bullet there."
-                    next
-                elsif lady_game == "2" ########### P L A Y  T H E  G A M E########
-                    puts "Princess Ascii: Oh, wonderful! Okay, I'm thinking of a number between 1 and 9. 
-                         If you guess correctly, I'll give you a wonderous gift! You only get ONE chance
-                         though, so make it count!"
-                         continue
-                    puts "
-                        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                         CHOOSE A NUMBER BETWEEN 1 AND 9. GOOD LUCK!
-                        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                        "
-                        princess_number = rand 10 
-                        guess = gets.chomp.to_i
-                        if guess != princess_number
-                            puts "Princess Ascii: Better luck next time, peasant!"
-                            continue
-                            puts "#{name}: -____-"
-                            next
-                        elsif guess = princess_number
-                            puts "Princess Ascii: Joy be upon us! You guessed correctly!"
-                            continue
-                            puts "#{name}: YEEEEAAAAAAHHHH BABBYYYYY! What do I get?!?!?"
-                            continue
-                            puts "Princess Ascii: Oh, it is a gift that transcends most mortal's comprehension! Prepare, peon!"
-                            continue
-                            "
+                lady_game = gets.chomp
+                    if lady_game == "1" ########### D O N T  P L A Y########
+                        puts "Princess Ascii: He's one of my biggest inspirations to be honest. How do you feel about termultuous torture and totalitarianism?"
+                        continue
+                        puts "#{name}: I think I'll pass...(YIKES)."
+                        continue
+                        puts "Princess Ascii: Suit yourself, plebian."
+                        continue    
+                        puts "#{name}: I think we dodged a bullet there."
+                        break
+                    elsif lady_game == "2" ########### P L A Y  T H E  G A M E########
+                        puts "Princess Ascii: Oh, wonderful! Okay, I'm thinking of a number between 1 and 9. 
+                            If you guess correctly, I'll give you a wonderous gift! You only get ONE chance
+                            though, so make it count!"
+                        puts "
                             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                              YOU RECEIVED A PAIR OF PRETTY COOL SOCKS
+                            CHOOSE A NUMBER BETWEEN 1 AND 9. GOOD LUCK!
                             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
                             "
-                            ##insert socks ascii?
-                            continue
-                            puts "#{name}: Oh...WoOOoowWW! Thank you, that's very generous of you."
-                            continue
-                            puts "Princess Ascii: I know, I am a modern alturist. Cherish them, subject."
-                            continue
-                            puts "#{name}: Alrighty, let's move right along"
-                            next
-                        else guess = #not a number??
-                        end
-                else puts "Invalid option! Press 1 or 2!"
-
-        
-
+                            while true
+                                princess_number = rand 10 
+                                guess = gets.chomp.to_i
+                                if guess == 0
+                                    puts "Guess 1-9, genius!" 
+                                elsif guess == princess_number
+                                    puts "Princess Ascii: Joy be upon us! You guessed correctly!"
+                                    continue
+                                    puts "#{name}: YEEEEAAAAAAHHHH BABBYYYYY! What do I get?!?!?"
+                                    continue
+                                    puts "Princess Ascii: Oh, it is a gift that transcends most mortal's comprehension! Prepare, peon!"
+                                    continue
+                                    "
+                                    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                    YOU RECEIVED A PAIR OF PRETTY COOL SOCKS
+                                    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                    |===|==|
+                                    |   |  |
+                                    |&  \  \
+                                    ( ,  `'-.'-._
+                                    `========/==/
+                                    "
+                                    continue
+                                    puts "#{name}: Oh...WoOOoowWW! Thank you, that's very generous of you."
+                                    continue
+                                    puts "Princess Ascii: I know, I am a modern alturist. Cherish them, subject."
+                                    continue
+                                    puts "#{name}: Alrighty, let's move right along"
+                                    break
+                                elsif guess != princess_number
+                                    puts "Princess Ascii: Better luck next time, peasant!"
+                                    break
+                                end
+                            end
+                    else puts "Invalid option! Press 1 or 2!"
+                        next
+                    end
+             
+                
         when "2"  #back to bartender? 
-            puts
+        puts
         when "3"
-            puts "#{name}: I'll head back to where we began." ######## EXIT BAR ##########
+        puts "#{name}: I'll head back to where we began." ######## EXIT BAR ##########
             break
         end
     end
