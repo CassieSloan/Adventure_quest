@@ -19,8 +19,8 @@ end
 
 ################################## T I T L E  S C R E E N ##################################
 
-puts 
-    "█████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗████████╗██╗   ██╗██████╗ ███████╗     ██████╗ ██╗   ██╗███████╗███████╗████████╗
+puts "
+      █████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗████████╗██╗   ██╗██████╗ ███████╗     ██████╗ ██╗   ██╗███████╗███████╗████████╗
      ██╔══██╗██╔══██╗██║   ██║██╔════╝████╗  ██║╚══██╔══╝██║   ██║██╔══██╗██╔════╝    ██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
      ███████║██║  ██║██║   ██║█████╗  ██╔██╗ ██║   ██║   ██║   ██║██████╔╝█████╗      ██║   ██║██║   ██║█████╗  ███████╗   ██║   
      ██╔══██║██║  ██║╚██╗ ██╔╝██╔══╝  ██║╚██╗██║   ██║   ██║   ██║██╔══██╗██╔══╝      ██║▄▄ ██║██║   ██║██╔══╝  ╚════██║   ██║   
@@ -43,7 +43,7 @@ puts "Greg: Hail and well met, traveller!
  ➢ 1. Um...who are you?
  ➢ 2. Actually, my bus broke down – #Transportnsw did me dirty once again
  ➢ 3. I AM READY FOR AN EPIC ADVENTURE!!
-    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 while true
     welcome_choice = gets.chomp
@@ -77,31 +77,31 @@ name = gets.chomp
 end
   
  puts " 
- ✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧.colorize(:light_blue)
- .・゜゜・　　・゜゜・．゜・.colorize(:light_blue)
- ゜゜・✧*: P O O F ! ・゜゜✧*:.colorize(:light_blue)
- *✧･ﾟ:* 　゜゜・　 *:・．゜・ .colorize(:light_blue)
- :* 　　 *:･ﾟ✧*:･゜゜・　　・゜.colorize(:light_blue)
+ ✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧.
+ .・゜゜・　　・゜゜・．゜・.
+ ゜゜・✧*: P O O F ! ・゜゜✧*:.
+ *✧･ﾟ:* 　゜゜・　 *:・．゜・ .
+ :* 　　 *:･ﾟ✧*:･゜゜・　　・゜.".colorize(:light_blue)
   
-  * * * * * * * * * * * * * * * * * * * * * * * .colorize(:white).on_red
-  *  G R E G  H A S  D I S S A P E A R E D!   * .colorize(:white).on_red
-  * * * * * * * * * * * * * * * * * * * * * * * .colorize(:white).on_red
+ puts " 
+* * * * * * * * * * * * * * * * * * * * * * * 
+*  G R E G  H A S  D I S S A P E A R E D!   * 
+* * * * * * * * * * * * * * * * * * * * * * *".colorize(:white).on_red
  
- psst, it's me Greg. I'm talking to you from the Astral plane. Press 'enter' to continue through your journey."
+puts "psst, it's me Greg. I'm talking to you from the Astral plane. Press 'enter' to continue through your journey."
 continue
 puts "#{name}: Well, that sure was weird. He reminded me of my uncle somehow."
 continue
 
 while true
 
-  puts "#{name}: Now, where should I go?"
-   "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+  puts "#{name}: Now, where should I go?
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
    ➢ 1. The bar!                                                           
    ➢ 2. The town!                                                          
    ➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. Dont get ahead of urself u excitable bish
    ➢ 4. Exit                                                               
    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-
   where_to_go = gets.chomp
   case where_to_go
     when "1"
