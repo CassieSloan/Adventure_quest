@@ -66,9 +66,17 @@ end
 
 puts "In any case, may I ask your name?"
 
+while true
 name = gets.chomp
+  if name.empty?
+    puts "Greg: Oh, come on. Your secret's safe with me"
+    next
+  else
+    puts "Welcome, #{name}. I hope you enjoy your time here. Make good choices!"
+    break
+  end
+end
   
-puts "Welcome, #{name}. I hope you enjoy your time here. Make good choices!"
 puts " "
 puts "✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧".colorize(:light_blue)
 puts ".・゜゜・　　・゜゜・．゜・".colorize(:light_blue)
@@ -84,36 +92,38 @@ puts "psst, it's me Greg. I'm talking to you from the Astral plane. Press 'enter
 continue
 puts "#{name}: Well, that sure was weird. He reminded me of my uncle somehow."
 continue
-puts "#{name}: Now, where should I go?"
-
-puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+" 
-puts "➢ 1. The bar!                                                           "
-puts "➢ 2. The town!                                                          "
-puts "➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. Dont get ahead of urself u excitable bish"
-puts "➢ 4. Exit                                                               "
-puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 while true
-where_to_go = gets.chomp
-case where_to_go
-  when "1"
-    puts "I'm pretty thirsty – let's head to the bar"
-    bar_story name
-    break
-  when "2"
-    puts "I'm feeling some local culture, let's head to the markets"
-    continue
-    town_story name
-    break
-  when "3"
-    puts "I've been couped up in the city for too long, lets get some fresh air!"
-  break
-  when "4"
-    puts "*******WIP*******" ##############################
-  else 
-    puts "Hey genius, press 1, 2 or 3!"
-  next
-  end
+
+  puts "#{name}: Now, where should I go?"
+  puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+" 
+  puts "➢ 1. The bar!                                                           "
+  puts "➢ 2. The town!                                                          "
+  puts "➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. Dont get ahead of urself u excitable bish"
+  puts "➢ 4. Exit                                                               "
+  puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+
+  where_to_go = gets.chomp
+  case where_to_go
+    when "1"
+      puts "I'm pretty thirsty – let's head to the bar"
+      bar_story name
+      next
+    when "2"
+      puts "I'm feeling some local culture, let's head to the markets"
+      continue
+      town_story name
+      next
+    when "3"
+      puts "I've been couped up in the city for too long, lets get some fresh air!"
+    next
+    when "4"
+      puts "*******WIP*******" ##############################
+      break
+    else 
+      puts "Hey genius, press 1, 2 or 3!"
+    next
+    end
 end
 
   continue

@@ -46,7 +46,7 @@ def town_story name
         puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
             town_choice = gets.chomp
         case town_choice
-        when "1"
+        when "1"        ##################### F O R T U N E  T E L L E R  #####################
             puts "Let's go see what our future holds"
             continue
             puts ""
@@ -63,11 +63,11 @@ def town_story name
             puts "                        //                 \\                )  ))"
             puts "                ______|~~~|____________|~~~|_________      ((("
             puts "                []#=====`^^'============`^^'========#[]    |||"
-            puts "            __[]_____________________________________[]___(___)_"
+            puts "             __[]_____________________________________[]___(___)_"
             puts "            [____________________________________________________]"
-            puts "            )   ===========================================  ("
-            puts "            /  /'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`  \ "
-            puts "            <__/    (___________________________)               \__>"
+            puts "             )  =========================================== ("
+            puts "            /  /'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`\ "
+            puts "           <__/    (___________________________)             \__>"
             puts ""
             puts "Fortune teller: Welcome, deary! Would ye like to hear your fortune?"
             puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
@@ -82,7 +82,6 @@ def town_story name
                     puts "PRESS ENTER WHEN YOU ARE READY TO RECEIVE YOUR FORTUNE"
                     puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
                     continue
-
                     random_number = rand 10 
                     puts random_number
                     case random_number
@@ -93,16 +92,55 @@ def town_story name
                     when 8..10
                         puts "Fortune teller: OoOoOOoooH yes! I see it! You are very fortunate indeed! Your dreams are on their way to coming true! You will find luck and contentment in your career, love life, family and most all other areas in your life! Except for your local government...not even I can fix that, darling."
                     end
-                    puts "#{name}: Wow...that was certainly...something."
+                    continue
+                    puts "#{name}: Wow...that was certainly...something. Let's see what else there is to do"
                 elsif fortune_choice == "2"
-                    puts "Fortune teller: The art of fortune telling is not some cheap hack! It has been passed down with the matriarchs in my family for generations! My spectacular services are closed to such minded individuals! GOOD DAY!"
+                    puts "Fortune teller: The art of fortune telling is not some cheap hack! It has been passed down through the matriarchs in my family for generations! My spectacular services are closed to such minded individuals! GOOD DAY!"
                     continue
                     puts "#{name}: Yikes, touchy! Let's see what else there is to do"
                     next
+                else 
+                    puts "Hey genius, press 1 or 2!"
+                    next
+                end
+        when "2"   ##################### P O T I O N S  S E L L E R  #####################
+            puts "Oooh potions!"
+            continue
+            puts ""
+            puts "        #############     "
+            puts "        ##         ##     "
+            puts "        #  ~~    ~~ #       "
+            puts "        # (.)   (.) #      "
+            puts "        (      ^    )   "
+            puts "         |         |     " 
+            puts "         |  {===}  |     "
+            puts "          \       /     "
+            puts "         /  -----  \    "
+            puts "      ---  |%\ /%|  ---   "
+            puts "      /    |%%%%%|     \   "
+            puts "           |%/ \%|      "
+            puts " __  __  __  __  __  __  __  __  __  __  "
+            puts " )(  )(  )(  )(  )(  )(  )(  )(  )(  )(   "
+            puts "(__)(__)(__)(__)(__)(__)(__)(__)(__)(__) "
+            continue
+            puts "Potions seller: Greetings traveller"
+            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+            puts "➢ 1. What do these potions do?"
+            puts "➢ 2. Got anything for bunions"
+            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                potions_choice = gets.chomp
+                if potions_choice == "1"
+                    puts "Potions seller: Would you like to find out"
+                    continue
+                elsif potions_choice == "2"
+                    puts "Potions seller: I'm sorry, bun-what-now?"
+                    continue
+                    puts "#{name}: It was worth a shot"
+                else 
+                    puts "Hey genius, press 1 or 2!"
                 end
 
-        when "2"   
-            puts
+
         when 
             "3"
             puts
