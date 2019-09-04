@@ -16,53 +16,60 @@ end
 ####################################### S T A R T  B A R  A R C #######################################
 continue
 def bar_story name
-    puts"                                                                            ".colorize(:red).on_black
-    puts"   ███            ▄████████ ▄██▄         ▄████████    ▄████████ ███▄▄▄▄        ".colorize(:red).on_black
-    puts"   ▀█████████▄   ███    ███ ███    ███   ███    ███   ███    ███ ███▀▀▀██▄  ".colorize(:red).on_black
-    puts"      ▀███▀▀██   ███    ███ ███    ███   ███    █▀    ███    ███ ███   ███  ".colorize(:red).on_black
-    puts"       ███   ▀   ███    ███ ███    ███  ▄███▄▄▄      ▄███▄▄▄▄██▀ ███   ███  ".colorize(:red).on_black
-    puts"       ███     ▀███████████ ███    ███ ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   ███   ███   ".colorize(:red).on_black
-    puts"       ███       ███    ███ ███    ███   ███    █▄  ▀███████████ ███   ███   ".colorize(:red).on_black
-    puts"       ███       ███    ███ ███    ███   ███    ███   ███    ███ ███   ███   ".colorize(:red).on_black
-    puts"      ▄████▀     ███    █▀   ▀██████▀    ██████████   ███    ███  ▀█   █▀    ".colorize(:red).on_black
-    puts"                                                      ███    ███             ".colorize(:red).on_black
-    puts"                                                                            ".colorize(:red).on_black
-    puts ""
+    puts
+    "                                                                            
+       ███            ▄████████ ▄██▄         ▄████████    ▄████████ ███▄▄▄▄        
+       ▀█████████▄   ███    ███ ███    ███   ███    ███   ███    ███ ███▀▀▀██▄  
+          ▀███▀▀██   ███    ███ ███    ███   ███    █▀    ███    ███ ███   ███  
+           ███   ▀   ███    ███ ███    ███  ▄███▄▄▄      ▄███▄▄▄▄██▀ ███   ███  
+           ███     ▀███████████ ███    ███ ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   ███   ███   
+           ███       ███    ███ ███    ███   ███    █▄  ▀███████████ ███   ███   
+           ███       ███    ███ ███    ███   ███    ███   ███    ███ ███   ███   
+          ▄████▀     ███    █▀   ▀██████▀    ██████████   ███    ███  ▀█   █▀    
+                                                          ███    ███             
+                                                                                
+    ".colorize(:red).on_black
+    
         continue
     puts "#{name}: Wow, the flashy sign is about the most fancy thing in here."
         continue
-    puts "                    dS$$S$S$S$S$S$S$$Sb                    "
-    puts "                    :$$S^S$S$S$S$S$S^S$$;                   "
-    puts "                    SSP   `^$S$S$^'   TSS                   "
-    puts "                    $$       `'       $$                   "
-    puts "                   _SS ,-           -  SS_                  "
-    puts "                  :-.|  _    - .-   _  |.-;                " 
-    puts "                  :\(; ''-._.'._.- `'' |)/;               "  
-    puts "                   \`|  , o       o .  |'/               "   
-    puts "                     :     -'   `-     ;              "    
-    puts "                      ;.              :                "
-    puts "                      : `    ._.    ' ;                     "
-    puts "                    .sSb   ._____.   dSs.                   "
-    puts "                 _.d8dSSb.   ._.   .SSbT8b._                "
-    puts "             _.oOPd88SSSS T.     .P SSSS888OOo.             "
-    puts "         _.mMMOOPd888SSSSb TSqqqSP dSSSS88OMOOOMm._         "
-    puts "      .oOMMMOMOOM8O8OSSSSSb TSSSP dSSSSS8OOMMOOMMOOOo._     "
-    puts "    .OOMMOOOMMOOMOOOO  ^SSSTSSP dSSS^OOOOMMOOMMMOOMMMb.   "
-    puts "   dOOOMMMOMMOOOMOOOO      ^SSSS^   :OOO8MMMOOMMOOMMOMMb  "
-    puts "  :MMMOOMMOMMOOMMO8OS         `P      8O8OPdMMOOMMOMMOMMMM; "
-    puts "  MMMMOOMMMMMOOMbTO8S;               :8888MMMMMOMMOMMOMMMMM "
-    puts "  OMMMMOOMMMMOOOMMOOOS        S     :O8OPdMOMMMOMOMMOOMMMMO "
-    puts " :OMMMMOOMMOMMOOMbTObTb.     :S;   .PdOPdMOOMMMMMOMMOMMMMMO;"
-    puts " MOOMMMMOMMOMMOOMMMOObTSSg._.SSS._.PdOPdMOOMMMMOMMMMOMMMMOOM"
-    puts " MMOMMMMOMMMOMMOOMMbT8bTSSSSSSSSSPd8OPdOOOMMMMOOMMMMOMMMOOMM"
-    puts " MMOMMMOMMMMMOMMOOMMMbT8bTSSSSSPd88PdOOOOMMMMOOMMMMMMMMOOMMM"
-    puts ""
-    puts "Bartender: What'll it be?"
-    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-    puts "➢ 1. One alcomahol please"
-    puts "➢ 2. Do you do a hot chocolate?"
-    puts "➢ 3. What's the special"
-    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+    puts 
+    "
+                        dS$$S$S$S$S$S$S$$Sb                    
+                        :$$S^S$S$S$S$S$S^S$$;                   
+                        SSP   `^$S$S$^'   TSS                   
+                        $$       `'       $$                   
+                       _SS ,-           -  SS_                  
+                      :-.|  _    - .-   _  |.-;                 
+                      :\(; ''-._.'._.- `'' |)/;               
+                       \`|  , o       o .  |'/                  
+                         :     -'   `-     ;                
+                          ;.              :                
+                          : `    ._.    ' ;                     
+                        .sSb   ._____.   dSs.                   
+                     _.d8dSSb.   ._.   .SSbT8b._                
+                 _.oOPd88SSSS T.     .P SSSS888OOo.             
+             _.mMMOOPd888SSSSb TSqqqSP dSSSS88OMOOOMm._         
+          .oOMMMOMOOM8O8OSSSSSb TSSSP dSSSSS8OOMMOOMMOOOo._     
+        .OOMMOOOMMOOMOOOO  ^SSSTSSP dSSS^OOOOMMOOMMMOOMMMb.   
+       dOOOMMMOMMOOOMOOOO      ^SSSS^   :OOO8MMMOOMMOOMMOMMb  
+      :MMMOOMMOMMOOMMO8OS         `P      8O8OPdMMOOMMOMMOMMMM; 
+      MMMMOOMMMMMOOMbTO8S;               :8888MMMMMOMMOMMOMMMMM 
+      OMMMMOOMMMMOOOMMOOOS        S     :O8OPdMOMMMOMOMMOOMMMMO 
+     :OMMMMOOMMOMMOOMbTObTb.     :S;   .PdOPdMOOMMMMMOMMOMMMMMO;
+     MOOMMMMOMMOMMOOMMMOObTSSg._.SSS._.PdOPdMOOMMMMOMMMMOMMMMOOM
+     MMOMMMMOMMMOMMOOMMbT8bTSSSSSSSSSPd8OPdOOOMMMMOOMMMMOMMMOOMM
+     MMOMMMOMMMMMOMMOOMMMbT8bTSSSSSPd88PdOOOOMMMMOOMMMMMMMMOOMMM
+     "
+    
+    puts "
+    Bartender: What'll it be?
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    ➢ 1. One alcomahol please
+    ➢ 2. Do you do a hot chocolate?
+    ➢ 3. What's the special
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    "
 
     ####################################### D R I N K  S E L E C T #######################################
 
@@ -71,22 +78,17 @@ def bar_story name
         drink_choice = gets.chomp
         case drink_choice
         when "1" ########### CHOICE 1 ########
-            puts "Bartender: The local drink has proven very strong to outsiders, are you sure?"
-            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-            puts "➢ 1. What do you take me for, an amateur? fill 'er up, cheif!"
-            puts "➢ 2. On second thoughts, maybe I'll have that hot chocolate"
-            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+            puts "
+            Bartender: The local drink has proven very strong to outsiders, are you sure?
+            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+            ➢ 1. What do you take me for, an amateur? fill 'er up, cheif!
+            ➢ 2. On second thoughts, maybe I'll have that hot chocolate?
+            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+            "
             alcohol = gets.chomp
                 if alcohol == "1" ########### DRUNK TIME ########
                     puts "Bartender: *chuckes* So it will be...enjoy."
-                    continue
-                    puts "˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@"
-                    puts " ҉。✧°。@°❋   DaArNn  Eet°❋ 。°。°。✧°@。°"
-                    puts "°✧。@°。°。° ҉。°。 ҉°❋ ✧。@°。゜ ҉✧。°。°。。"
-                    puts "°。° ҉。✧°Iii。@°❋ 。°。°。✧°。゜。✧❋ °。°。°@。"
-                    puts "°。✼°。✧°。 ҉°。°✧@。° ҉。✧°aAm。゜ ҉。°。°✧。°。✧"
-                    puts "°。✧ ҉°。°。°。DRRrOOnKKKK!!°❋ 。°。°。@゜❋ 。°。 "
-                    puts "°。°❋ 。✧@°。°。°。° ҉。✧°。゜。°✧。@°。°。。°。°。✧"
+                    conti
                     continue
                     puts "Bartender: Need somewhere to lie down?"
                     continue

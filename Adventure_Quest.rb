@@ -19,31 +19,31 @@ end
 
 ################################## T I T L E  S C R E E N ##################################
 
-puts "█████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗████████╗██╗   ██╗██████╗ ███████╗     ██████╗ ██╗   ██╗███████╗███████╗████████╗"
-puts "██╔══██╗██╔══██╗██║   ██║██╔════╝████╗  ██║╚══██╔══╝██║   ██║██╔══██╗██╔════╝    ██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝"
-puts "███████║██║  ██║██║   ██║█████╗  ██╔██╗ ██║   ██║   ██║   ██║██████╔╝█████╗      ██║   ██║██║   ██║█████╗  ███████╗   ██║   "
-puts "██╔══██║██║  ██║╚██╗ ██╔╝██╔══╝  ██║╚██╗██║   ██║   ██║   ██║██╔══██╗██╔══╝      ██║▄▄ ██║██║   ██║██╔══╝  ╚════██║   ██║   "
-puts "██║  ██║██████╔╝ ╚████╔╝ ███████╗██║ ╚████║   ██║   ╚██████╔╝██║  ██║███████╗    ╚██████╔╝╚██████╔╝███████╗███████║   ██║   "
-puts "╚═╝  ╚═╝╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝     ╚══▀▀═╝  ╚═════╝ ╚══════╝╚══════╝   ╚═╝ "
-puts "█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████"
-puts "                       *.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*"
+puts 
+    "█████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗████████╗██╗   ██╗██████╗ ███████╗     ██████╗ ██╗   ██╗███████╗███████╗████████╗
+     ██╔══██╗██╔══██╗██║   ██║██╔════╝████╗  ██║╚══██╔══╝██║   ██║██╔══██╗██╔════╝    ██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
+     ███████║██║  ██║██║   ██║█████╗  ██╔██╗ ██║   ██║   ██║   ██║██████╔╝█████╗      ██║   ██║██║   ██║█████╗  ███████╗   ██║   
+     ██╔══██║██║  ██║╚██╗ ██╔╝██╔══╝  ██║╚██╗██║   ██║   ██║   ██║██╔══██╗██╔══╝      ██║▄▄ ██║██║   ██║██╔══╝  ╚════██║   ██║   
+     ██║  ██║██████╔╝ ╚████╔╝ ███████╗██║ ╚████║   ██║   ╚██████╔╝██║  ██║███████╗    ╚██████╔╝╚██████╔╝███████╗███████║   ██║   
+     ╚═╝  ╚═╝╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝     ╚══▀▀═╝  ╚═════╝ ╚══════╝╚══════╝   ╚═╝ 
+     █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+                            *.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*
 
-puts"                                         P R E S S  E N T E R                      "
-puts"                                           T O   S T A R T                         " 
+                                              P R E S S  E N T E R                      
+                                                T O   S T A R T                         
 
-puts "                       *.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*"
-
+                            *.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*"
 continue
 
 ################################## T H E  B E G I N N I N G ##################################
 
-puts "Greg: Hail and well met, traveller!"
-puts ""
-puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
-puts "➢ 1. Um...who are you?"
-puts "➢ 2. Actually, my bus broke down – #Transportnsw did me dirty once again"
-puts "➢ 3. I AM READY FOR AN EPIC ADVENTURE!!"
-puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+puts "Greg: Hail and well met, traveller!
+ 
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ ➢ 1. Um...who are you?
+ ➢ 2. Actually, my bus broke down – #Transportnsw did me dirty once again
+ ➢ 3. I AM READY FOR AN EPIC ADVENTURE!!
+    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 while true
     welcome_choice = gets.chomp
@@ -76,18 +76,18 @@ name = gets.chomp
   end
 end
   
-puts " "
-puts "✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧".colorize(:light_blue)
-puts ".・゜゜・　　・゜゜・．゜・".colorize(:light_blue)
-puts "゜゜・✧*: P O O F ! ・゜゜✧*:".colorize(:light_blue)
-puts "*✧･ﾟ:* 　゜゜・　 *:・．゜・ ".colorize(:light_blue)
-puts" :* 　　 *:･ﾟ✧*:･゜゜・　　・゜".colorize(:light_blue)
-puts " "
-puts " * * * * * * * * * * * * * * * * * * * * * * * ".colorize(:white).on_red
-puts " *  G R E G  H A S  D I S S A P E A R E D!   * ".colorize(:white).on_red
-puts " * * * * * * * * * * * * * * * * * * * * * * * ".colorize(:white).on_red
-puts ""
-puts "psst, it's me Greg. I'm talking to you from the Astral plane. Press 'enter' to continue through your journey."
+ puts " 
+ ✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧.colorize(:light_blue)
+ .・゜゜・　　・゜゜・．゜・.colorize(:light_blue)
+ ゜゜・✧*: P O O F ! ・゜゜✧*:.colorize(:light_blue)
+ *✧･ﾟ:* 　゜゜・　 *:・．゜・ .colorize(:light_blue)
+ :* 　　 *:･ﾟ✧*:･゜゜・　　・゜.colorize(:light_blue)
+  
+  * * * * * * * * * * * * * * * * * * * * * * * .colorize(:white).on_red
+  *  G R E G  H A S  D I S S A P E A R E D!   * .colorize(:white).on_red
+  * * * * * * * * * * * * * * * * * * * * * * * .colorize(:white).on_red
+ 
+ psst, it's me Greg. I'm talking to you from the Astral plane. Press 'enter' to continue through your journey."
 continue
 puts "#{name}: Well, that sure was weird. He reminded me of my uncle somehow."
 continue
@@ -95,12 +95,12 @@ continue
 while true
 
   puts "#{name}: Now, where should I go?"
-  puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+" 
-  puts "➢ 1. The bar!                                                           "
-  puts "➢ 2. The town!                                                          "
-  puts "➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. Dont get ahead of urself u excitable bish"
-  puts "➢ 4. Exit                                                               "
-  puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+   "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   ➢ 1. The bar!                                                           
+   ➢ 2. The town!                                                          
+   ➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. Dont get ahead of urself u excitable bish
+   ➢ 4. Exit                                                               
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
   where_to_go = gets.chomp
   case where_to_go
