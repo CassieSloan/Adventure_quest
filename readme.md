@@ -75,21 +75,39 @@ The users interact with the game by selecting the number of the option they woul
 
 Tuesday | Wednesday | Thursday | Friday
 ------------ | ------------- | ------------- |-------------
-Draft control flow chart  | Assess scope of required documentation | Continue writing program | friday| 
-Establish decisions made by user and outcomes achieved | Finalise control flow chart | Ensure DRY principles are being used 
-Research how to register just the ‘Enter/Return’ key as input | Draft Software Development Plan | Design help/read/me file
-Begin scripting dialogue | Research RNG for game mechanic | Logistics for bash script and formatting in directories
-Research and utilise Ascii elements for aesthetic purposes| Find 3 more gems to use in application - music?? |ss | ss
-Begin writing foundational code | 
-
+Draft control flow chart  | Assess scope of required documentation | Continue writing program | Present application to class| 
+Establish decisions made by user and outcomes achieved | Finalise control flow chart | Ensure DRY principles are being used | final touches by 10pm!
+Research how to register just the ‘Enter/Return’ key as input | Draft Software Development Plan | Design help/read/me file | Final commits to Github
+Begin scripting dialogue | Research RNG for game mechanic | Logistics for bash script and formatting in directories | Pray
+Research and utilise Ascii elements for aesthetic purposes| Find 3 more gems to use in application - music?? | Finish Town story | 
+Begin writing foundational code | | Finish Bar story and add exit loops
 - [Trello board](https://trello.com/invite/b/Swkg7k70/2ca3401b6708375857aa3b2bbfd77226/terminal-application-i)
 
 - [Version control with git/github](https://github.com/CassieSloan/Adventure_quest)
 
-- [Error testing]()
+- [Error testing](https://docs.google.com/spreadsheets/d/17hSEX4_7QUb91z0rM28xtrtvh28OPw--4KlS7GV-W9c/edit?usp=sharing)
 
-help
-bash.sh 
-gems
-rb files
-and packaging
+##Status updates/iterations
+
+- Had to insert new 'puts' on each line of multi-line-ascii  code. Otherwise it formatted strangely in the terminal
+- Had to loop initial bartender story into larger BAR story
+
+#####Learnings
+- Learned `.empty?`
+- Strings = 0 when get.chomp.to_i
+- Learned `afplay`
+
+
+##Help
+
+***Gems***
+require 'colorize'
+
+***Files***
+desert-dance.mp3
+Adventure_Quest.rb
+town.rb
+bar.rb
+
+***Reference***
+[git/github](https://github.com/CassieSloan/Adventure_quest)
