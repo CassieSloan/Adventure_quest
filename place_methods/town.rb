@@ -42,11 +42,11 @@ def town_story name
     #######################################  C H O I C E S #######################################
 
     while true
-        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-"
+        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:cyan)
         puts " ➢ 1. Fortune teller"
         puts " ➢ 2. Postions stand"
         puts " ➢ 3. Back to main street"
-        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-"
+        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:cyan)
             town_choice = gets.chomp
         case town_choice
         when "1"        ##################### F O R T U N E  T E L L E R  #####################
@@ -73,17 +73,17 @@ def town_story name
             puts "            <__/    (___________________________)             \__>"
              
             puts "Fortune teller: Welcome, deary! Would ye like to hear your fortune?"
-            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:magenta)
             puts " ➢ 1. Why yes, yes I would. I'm feeling lucky"
             puts " ➢ 2. I don't know, is this some woo woo shtick?"
-            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:magenta)
                 fortune_choice = gets.chomp
                 if fortune_choice == "1" ##################### H A V E  F O R T U N E  T O L D  #####################
                     puts "Fortune teller: How fortunate – let us test your luck"
                     continue
-                        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:magenta)
                         puts " PRESS ENTER TO TRY YOUR LUCK AND RECEIVE YOUR FORTUNE"
-                        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:magenta)
                     continue
                     random_number = rand 10 
                     puts random_number
@@ -128,10 +128,10 @@ def town_story name
             puts " "
             continue
             puts "Potions seller: Greetings traveller"
-            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:green)
             puts " ➢ 1. What do these potions do?"
             puts " ➢ 2. Got anything for bunions?"
-            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:green)
              
                 potions_choice = gets.chomp
                 if potions_choice == "1" 
@@ -142,18 +142,18 @@ def town_story name
                     puts "Potions seller: With your constitution...death might be preferable to what these potions can do..."
                         continue    
                         
-                        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:green)
                         puts " ➢ 1. Glug glug, thug!"
                         puts " ➢ 2. On second thoughts, I think I'll pass."
-                        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:green)
                          
                         drink_potions = gets.chomp
                     
                         if drink_potions == "1" ##################### D R I N K  P O T I O N S  #####################
                             
-                            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:green)
                             puts "PRESS ENTER TO DRINK A RANDOM POTION"
-                            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:green)
                             continue
 
                             random_potion = rand 10 
@@ -161,10 +161,10 @@ def town_story name
                             case random_potion
 
                             when  0..3
-                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:blue)
                                 puts " The potion is a thick, viscous, purple concoction."
                                 puts " It bubbles and spits, but it smells divine!!!!!!!"
-                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:blue)
                                 continue
                                 puts "
                                 ˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@.
@@ -182,10 +182,10 @@ def town_story name
                                 next
 
                             when 4..7
-                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:yellow)
                                 puts "The potion is an iridescent golden, refracting light"
                                 puts "in every direction. It smells like sweet tumeric"
-                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:yellow)
                                 continue
                                 puts "˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@."
                                 puts " ҉。✧°。@°❋   I °❋ feel。invigorated!°。°。✧°"
@@ -196,10 +196,10 @@ def town_story name
 
                             when 8..10
                                 puts ""
-                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:green)
                                 puts " This potion doesns't looks so bad! It closely"
                                 puts " resembles...sparkling water? Seems safe..."
-                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:green)
                                 continue
                                 puts "
                                 .
@@ -237,9 +237,9 @@ def town_story name
                                     puts ""
                                     puts "Potions seller: *sigh* That's the third time this week. Take this, it'll remedy the blindness".colorize(:white).on_black
                                 continue
-                                    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                                    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:green)
                                     puts "You received an antidote! You drink it hastily"
-                                    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                                    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-".colorize(:green)
                                 continue
                                 puts "#{name}: Aaah. That's better. I think I should stay away from mysterious potions from now on."
                                 continue
@@ -254,6 +254,8 @@ def town_story name
                             continue
                             puts "#{name}: Where to?"
                             next
+                        else 
+                            puts "Hey genius, press 1 or 2!"
                         end
                 elsif potions_choice == "2" ################## D O N T  D R I N K  P O T I O N S   ###############
                     puts "Potions seller: I'm sorry, bun-what-now?"

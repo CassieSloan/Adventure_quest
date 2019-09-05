@@ -35,12 +35,12 @@ def bar_story name
         ####################################### C H O I C E S#######################################
 
     while true
-        puts "#{name}: What should we do?
-        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-        ➢ 1. Chat up the beautiful lady down the bar
-        ➢ 2. Speak the to bar tender 
-        ➢ 3. Back to main street
-        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+        puts "#{name}: What should we do?"
+        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:red)
+        puts " ➢ 1. Chat up the beautiful lady down the bar"
+        puts " ➢ 2. Speak the to bar tender "
+        puts " ➢ 3. Back to main street"
+        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:red)
         bar_choice = gets.chomp
         case bar_choice
         when "1" ################################## B E A U T I F U L  L A D Y ##################################
@@ -74,10 +74,10 @@ def bar_story name
            continue
            puts "Princess Ascii: Do you want to play a game?"
            continue
-           puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+           puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:light_magenta)
            puts "➢ 1. Who are you, Jigsaw?"
            puts "➢ 2. Sure!"
-           puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+           puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:light_magenta)
                 lady_game = gets.chomp
                     if lady_game == "1" ########### D O N T  P L A Y########
                         puts "Princess Ascii: He's one of my biggest inspirations to be honest. How do you feel about termultuous torture and totalitarianism?"
@@ -92,11 +92,10 @@ def bar_story name
                         puts "Princess Ascii: Oh, wonderful! Okay, I'm thinking of a number between 1 and 9."
                         puts "If you guess correctly, I'll give you a wonderous gift! You only get ONE chance"
                         puts  "though, so make it count!"
-                        puts "
-                            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                            CHOOSE A NUMBER BETWEEN 1 AND 9. GOOD LUCK!
-                            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                            "
+                        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:light_magenta)
+                        puts " CHOOSE A NUMBER BETWEEN 1 AND 9. GOOD LUCK!"
+                        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:light_magenta)
+                            
                             while true
                                 princess_number = rand 10 
                                 guess = gets.chomp.to_i
@@ -109,16 +108,16 @@ def bar_story name
                                     continue
                                     puts "Princess Ascii: Oh, it is a gift that transcends most mortal's comprehension! Prepare, peon!"
                                     continue
-                                    puts "
-                                    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                                    YOU RECEIVED A PAIR OF PRETTY COOL SOCKS
-                                    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                                    |===|==|
-                                    |   |  |
-                                    |&  \  \
-                                    ( ,  `'-.'-._
-                                    `========/==/
-                                    "
+                                    
+                                    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:light_magenta)
+                                    puts "YOU RECEIVED A PAIR OF PRETTY COOL SOCKS"
+                                    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:light_magenta)
+                                    puts "|===|==|"
+                                    puts "|   |  |"
+                                    puts "|&  \  \\"
+                                    puts "( ,  `'-.'-._"
+                                    puts "`========/==/"
+                                    
                                     continue
                                     puts "#{name}: Oh...WoOOoowWW! Thank you, that's very generous of you."
                                     continue
@@ -162,14 +161,14 @@ def bar_story name
      MMOMMMMOMMMOMMOOMMbT8bTSSSSSSSSSPd8OPdOOOMMMMOOMMMMOMMMOOMM
      MMOMMMOMMMMMOMMOOMMMbT8bTSSSSSPd88PdOOOOMMMMOOMMMMMMMMOOMMM
      "
-    puts "
-    Bartender: What'll it be?
-    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-    ➢ 1. One alcomahol please
-    ➢ 2. Do you do a hot chocolate?
-    ➢ 3. What's the special
-    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-    "
+    puts ""
+    puts "Bartender: What'll it be?"
+    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:red)
+    puts "➢ 1. One alcomahol please"
+    puts "➢ 2. Do you do a hot chocolate?"
+    puts "➢ 3. What's the special"
+    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:red)
+    
 
     ####################################### D R I N K  S E L E C T #######################################
 
@@ -177,28 +176,27 @@ def bar_story name
         drink_choice = gets.chomp
         case drink_choice
         when "1" ########### CHOICE 1 ########
-            puts "
-            Bartender: The local drink has proven very strong to outsiders, are you sure?
-            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-            ➢ 1. What do you take me for, an amateur? fill 'er up, cheif!
-            ➢ 2. On second thoughts, maybe I'll have that hot chocolate?
-            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-            "
+            
+            puts "Bartender: The local drink has proven very strong to outsiders, are you sure?"
+            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:red)
+            puts "➢ 1. What do you take me for, an amateur? fill 'er up, cheif!"
+            puts "➢ 2. On second thoughts, maybe I'll have that hot chocolate?"
+            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:red)
+            
             alcohol = gets.chomp
                 if alcohol == "1" ########### DRUNK TIME ########
                     puts "Bartender: *chuckes* So it will be...enjoy."
                     continue
-                    puts
-                    " 
-                    ˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@.
-                    ҉。✧°。@°❋  °❋ 。DizZzZYyyEEe!!!°。°。✧°
-                   °✧。@°。°。° ҉。°。 ҉°❋ ✧。@°。゜ ҉✧。°。°。。.
-                   °。° ҉。✧°。@°❋ IIamm。°。°。✧°。゜。✧❋ °。°。°@。.
-                   °。✼°。✧°。 ҉°。°✧@。° ҉。✧°aaAaAA。゜ ҉。meep°。°✧。
-                   °。✧ ҉°。°。°。DrOuNkkkk!!°❋ 。°。°。@゜❋ 。°。 
-                   °。°❋ 。✧@°。°。°。° ҉。✧°。゜。°✧。@°。°。。°。°。✧.
-                   ˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@".colorize(:blue)
-
+                    
+                    puts "˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@.".colorize(:blue)
+                    puts " ҉。✧°。@°❋  °❋ 。DizZzZYyyEEe!!!°。°。✧°".colorize(:blue)
+                    puts "°✧。@°。°。° ҉。°。 ҉°❋ ✧。@°。゜ ҉✧。°。°。。.".colorize(:blue)
+                    puts "°。° ҉。✧°。@°❋ IIamm。°。°。✧°。゜。✧❋ °。°。°@。.".colorize(:blue)
+                    puts "°。✼°。✧°。 ҉°。°✧@。° ҉。✧°aaAaAA。゜ ҉。meep°。°✧。".colorize(:blue)
+                    puts "°。✧ ҉°。°。°。DrOuNkkkk!!°❋ 。°。°。@゜❋ 。°。 ".colorize(:blue)
+                    puts "°。°❋ 。✧@°。°。°。° ҉。✧°。゜。°✧。@°。°。。°。°。✧.".colorize(:blue)
+                    puts "˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@".colorize(:blue)
+                    continue
                     puts "Bartender: Need somewhere to lie down?"
                     continue
                     puts "#{name}: YyEazzsh...Pleezshh"

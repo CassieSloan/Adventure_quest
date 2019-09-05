@@ -6,6 +6,8 @@ require 'lolcat'
 require_relative "./place_methods/bar"
 require_relative "./place_methods/town"
 
+pid = fork{ exec `afplay desert-dance.mp3`}
+
 def continue 
   
   while true
@@ -38,11 +40,11 @@ continue
 
 puts "Greg: Hail and well met, traveller!"
 puts "" 
-puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:cyan)
 puts " ➢ 1. Um...who are you?"
 puts " ➢ 2. Actually, my bus broke down – #Transportnsw did me dirty once again"
 puts " ➢ 3. I AM READY FOR AN EPIC ADVENTURE!!"
-puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:cyan)
 
 while true
     welcome_choice = gets.chomp
@@ -85,25 +87,22 @@ end
  :* 　　 *:･ﾟ✧*:･゜゜・　　・゜.".colorize(:light_blue)
   
 puts ""  
-puts "* * * * * * * * * * * * * * * * * * * * * * *"
-puts "*  G R E G  H A S  D I S S A P E A R E D!   *"
+puts "* * * * * * * * * * * * * * * * * * * * * * *".colorize(:white).on_red
+puts "*  G R E G  H A S  D I S S A P E A R E D!   *".colorize(:white).on_red
 puts "* * * * * * * * * * * * * * * * * * * * * * *".colorize(:white).on_red
 puts "" 
 puts "psst, it's me Greg. I'm talking to you from the Astral plane. Press 'enter' to continue through your journey."
 continue
 puts "#{name}: Well, that sure was weird. He reminded me of my uncle somehow."
 continue
+puts "#{name}: Now, where should I go?"
 ######### A D V E N T U R E  S T A R T S ########
 while true
-
-  puts "#{name}: Now, where should I go?"
-  puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+  puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:cyan)
   puts " ➢ 1. The bar!   "                                                        
   puts " ➢ 2. The town!   "                                                       
-  puts " ➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. "
-  puts "      Dont get ahead of urself u excitable bish"
-  puts " ➢ 4. Exit                   "                                            
-  puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+  puts " ➢ 3. Exit                   "                                            
+  puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+".colorize(:cyan)
   
   where_to_go = gets.chomp
   case where_to_go
@@ -118,14 +117,18 @@ while true
       town_story name
       next
     when "3"
-      puts "I've been couped up in the city for too long, lets get some fresh air!"
-    next
-    when "4"
-      puts "*******WIP*******" ##############################
+      puts "#{name}: Well, this sure was fun, but I should probably get home to my cats. So long, really strange place I have no idea how I got to!"
+      continue
+      puts "*You hear something in the wind*"
+      continue
+      puts "Greg: Later, nerd..."
       break
     else 
       puts "Hey genius, press 1, 2 or 3!"
     next
     end
 end
+
+pid = fork{ exec 'killall', 'desert-dance.mp3'}
+
 
