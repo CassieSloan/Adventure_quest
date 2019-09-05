@@ -17,76 +17,73 @@ continue
 
 def town_story name
 
-    puts 
-     "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-                                             
-     |    __  __    _    ____  _  _______ _____ ____     |
-     |   |  \/  |  / \  |  _ \| |/ | ____|_   _/ ___|    |
-     |   | |\/| | / _ \ | |_) | ' /|  _|   | | \___ \    |
-     |   | |  | |/ ___ \|  _ <| . \| |___  | |  ___) |   |
-     |   |_|  |_/_/   \_|_| \_|_|\_|_____| |_| |____/    |
-     |                                                   |
-     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-                                                 
-                           |   |
-                           |   |
-                           |   |
-                           |   |
-                           |   |
-                           |   |
-                           |   |
-                           |   |
-                           |   |
-                           |   |
+    puts ""
+    puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-          "                                  
+    puts " |    __  __    _    ____  _  _______ _____ ____     |" 
+    puts " |   |  \/  |  / \  |  _ \| |/ | ____|_   _/ ___|    |" 
+    puts " |   | |\/| | / _ \ | |_) | ' /|  _|   | | \___ \    |" 
+    puts " |   | |  | |/ ___ \|  _ <| . \| |___  | |  ___) |   |" 
+    puts " |   |_|  |_/_/   \_|_| \_|_|\_|_____| |_| |____/    |" 
+    puts " |                                                   |" 
+    puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-   "                                               
+    puts "                       |   |" 
+    puts "                       |   |" 
+    puts "                       |   |" 
+    puts "                       |   |" 
+    puts "                       |   |" 
+    puts "                       |   |" 
+    puts "                       |   |" 
+    puts "                       |   |" 
+    puts "                       |   |" 
+    puts "                       |   |" 
 
-     #{name}: Oh, how quaint! Where should we go?"
+    puts " #{name}: Oh, how quaint! Where should we go?"
 
-    ####################################### F I R S T  C H O I C E #######################################
+    #######################################  C H O I C E S #######################################
 
     while true
-        puts "
-        +-+-+-+-+-+-+-+-+-+-+-+-+-
-         ➢ 1. Fortune teller
-         ➢ 2. Postions stand
-         ➢ 3. Back to main street
-        +-+-+-+-+-+-+-+-+-+-+-+-+-"
+        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-"
+        puts " ➢ 1. Fortune teller"
+        puts " ➢ 2. Postions stand"
+        puts " ➢ 3. Back to main street"
+        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-"
             town_choice = gets.chomp
         case town_choice
         when "1"        ##################### F O R T U N E  T E L L E R  #####################
             puts "Let's go see what our future holds"
             continue
-            puts "
-                                     <====//////====[]
-                                         /////\\\\\ 
-                                       ((((( )))))))) 
-                                       ||| /\   /\ || 
-                                       || |_O| |O_||| 
-                                      (9|     ^    |6) 
-                                         \    V   /                          )
-                                         (~~~~~~~~~)                   ( ((
-                                         /~~~~~~~~~~~\                     )) )
-                                     ///////|||\\\\\\\                 (( ((
-                                     //                 \\                )  ))
-                             ______|~~~|____________|~~~|_________      (((
-                             []#=====`^^'============`^^'========#[]    |||
-                          __[]_____________________________________[]___(___)_
-                         [____________________________________________________]
-                          )  =========================================== (
-                         /  /'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`\ 
-                        <__/    (___________________________)             \__>"
+            puts ""
+            puts "                         <====//////====[]"
+            puts "                             /////\\\\\ "
+            puts "                           ((((( )))))))) "
+            puts "                           ||| /\   /\ || "
+            puts "                           || |_O| |O_||| "
+            puts "                          (9|     ^    |6) "
+            puts "                             \    V   /                          )"
+            puts "                             (~~~~~~~~~)                   ( (("
+            puts "                             /~~~~~~~~~~~\                     )) )"
+            puts "                         ///////|||\\\\\\\                 (( (("
+            puts "                         //                 \\                )  ))"
+            puts "                 ______|~~~|____________|~~~|_________      ((("
+            puts "                 []#=====`^^'============`^^'========#[]    ||| "
+            puts "              __[]_____________________________________[]___(___)_"
+            puts "             [____________________________________________________]"
+            puts "              )  =========================================== ("
+            puts "             /  /'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`\ "
+            puts "            <__/    (___________________________)             \__>"
              
-                 puts "Fortune teller: Welcome, deary! Would ye like to hear your fortune?
-                 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                 ➢ 1. Why yes, yes I would. I'm feeling lucky
-                 ➢ 2. I don't know, is this some woo woo shtick?
-                +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+            puts "Fortune teller: Welcome, deary! Would ye like to hear your fortune?"
+            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+            puts " ➢ 1. Why yes, yes I would. I'm feeling lucky"
+            puts " ➢ 2. I don't know, is this some woo woo shtick?"
+            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
                 fortune_choice = gets.chomp
                 if fortune_choice == "1" ##################### H A V E  F O R T U N E  T O L D  #####################
                     puts "Fortune teller: How fortunate – let us test your luck"
                     continue
-                    puts "
-                        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                         PRESS ENTER TO TRY YOUR LUCK AND RECEIVE YOUR FORTUNE
-                        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                        "
+                        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                        puts " PRESS ENTER TO TRY YOUR LUCK AND RECEIVE YOUR FORTUNE"
+                        puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
                     continue
                     random_number = rand 10 
                     puts random_number
@@ -112,31 +109,30 @@ def town_story name
         when "2"   ##################### P O T I O N S  S E L L E R  #####################
             puts "Oooh potions!"
             continue
-            puts "
-                     #############     
-                     ##         ##     
-                     #  ~~    ~~ #     
-                     # (.)   (.) #     
-                     (      ^    )     
-                      |         |      
-                      |  {===}  |      
-                       \       /       
-                      /  -----  \      
-                   ---  |%\ /%|  ---   
-                   /    |%%%%%|     \  
-                        |%/ \%|        
-              __  __  __  __  __  __  __  __  __  __  
-              )(  )(  )(  )(  )(  )(  )(  )(  )(  )(  
-             (__)(__)(__)(__)(__)(__)(__)(__)(__)(__) 
-             "
+            puts ""
+            puts "         #############     "
+            puts "         ##         ##     "
+            puts "         #  ~~    ~~ #     "
+            puts "         # (.)   (.) #     "
+            puts "         (      ^    )     "
+            puts "          |         |      "
+            puts "          |  {===}  |      "
+            puts "           \       /       "
+            puts "          /  -----  \      "
+            puts "       ---  |%\ /%|  ---   "
+            puts "       /    |%%%%%|     \  "
+            puts "            |%/ \%|        "
+            puts "  __  __  __  __  __  __  __  __  __  __  "
+            puts "  )(  )(  )(  )(  )(  )(  )(  )(  )(  )(  "
+            puts " (__)(__)(__)(__)(__)(__)(__)(__)(__)(__) "
+            puts " "
             continue
-            puts "
-        Potions seller: Greetings traveller
-             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-             ➢ 1. What do these potions do?
-             ➢ 2. Got anything for bunions?
-             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-             "
+            puts "Potions seller: Greetings traveller"
+            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+            puts " ➢ 1. What do these potions do?"
+            puts " ➢ 2. Got anything for bunions?"
+            puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+             
                 potions_choice = gets.chomp
                 if potions_choice == "1" 
                     puts "Potions seller: Would you like to find out?"
@@ -145,30 +141,30 @@ def town_story name
                         continue
                     puts "Potions seller: With your constitution...death might be preferable to what these potions can do..."
                         continue    
-                        puts "
-                         +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                         ➢ 1. Glug glug, thug!
-                         ➢ 2. On second thoughts, I think I'll pass.
-                         +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                         "
+                        
+                        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                        puts " ➢ 1. Glug glug, thug!"
+                        puts " ➢ 2. On second thoughts, I think I'll pass."
+                        puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                         
                         drink_potions = gets.chomp
                     
                         if drink_potions == "1" ##################### D R I N K  P O T I O N S  #####################
-                            puts "
-                             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                             PRESS ENTER TO DRINK A RANDOM POTION
-                             +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                            
+                            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                            puts "PRESS ENTER TO DRINK A RANDOM POTION"
+                            puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
                             continue
+
                             random_potion = rand 10 
                             puts random_potion
                             case random_potion
-                            when  0..3 
-                                puts  "
-                                +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                                 The potion is a thick, viscous, purple concoction.
-                                 It bubbles and spits, but it smells divine!!!!!!!
-                                +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                                "
+
+                            when  0..3
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                                puts " The potion is a thick, viscous, purple concoction."
+                                puts " It bubbles and spits, but it smells divine!!!!!!!"
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
                                 continue
                                 puts "
                                 ˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@.
@@ -184,31 +180,41 @@ def town_story name
                                 continue
                                 puts "#{name}: Thank you, sir! *happily skips away*"
                                 next
+
                             when 4..7
-                                puts "
-                                +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                                The potion is an iridescent golden, refracting light
-                                in every direction. It smells like sweet tumeric
-                                +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                                "
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                                puts "The potion is an iridescent golden, refracting light"
+                                puts "in every direction. It smells like sweet tumeric"
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
                                 continue
-                                puts "
-                                ˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@.
-                                ҉。✧°。@°❋   I °❋ feel。invigorated!°。°。✧°
-                               °✧。@°。°。° ҉。°。 ҉°❋ ✧。@°。゜ ҉✧。°。°。。.".colorize(:yellow)
-                               continue
-                               puts "#{name}: What should we do now?"
-                               next
+                                puts "˚✧ ҉҉。✧°。゜҉✧。°@。°。 ҉°。°✧ ҉°❋ ✧。°。@."
+                                puts " ҉。✧°。@°❋   I °❋ feel。invigorated!°。°。✧°"
+                                puts "°✧。@°。°。° ҉。°。 ҉°❋ ✧。@°。゜ ҉✧。°。°。。.".colorize(:yellow)
+                                continue
+                                puts "#{name}: What should we do now?"
+                                next
 
                             when 8..10
-                                puts "
-                                +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                                 This potion doesns't looks so bad! It closely
-                                 resembles...sparkling water? Seems safe...
-                                +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                                "
+                                puts ""
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+                                puts " This potion doesns't looks so bad! It closely"
+                                puts " resembles...sparkling water? Seems safe..."
+                                puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
                                 continue
                                 puts "
+                                .
+                                .
+                                .
+                                .
+                                .
+                                .
+                                .
+                                .
+                                .
+                                .
+                                .
+                                .
+                                .
                                 .
                                 .
                                 .
@@ -228,17 +234,17 @@ def town_story name
                                 continue
                                     puts "#{name}: AaaAAH??? I'M BLIND??!?!?!?!?!"
                                 continue
+                                    puts ""
                                     puts "Potions seller: *sigh* That's the third time this week. Take this, it'll remedy the blindness".colorize(:white).on_black
                                 continue
-                                    puts "
-                                +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                                You received an antidote! You drink it hastily
-                                +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                                "
+                                    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+                                    puts "You received an antidote! You drink it hastily"
+                                    puts "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
                                 continue
                                 puts "#{name}: Aaah. That's better. I think I should stay away from mysterious potions from now on."
                                 continue
                                 puts "Potions seller: I think that's wise. Good day."
+                                continue
                                 next
                                 puts "#{name}: Where to?"
                             end
@@ -253,6 +259,7 @@ def town_story name
                     puts "Potions seller: I'm sorry, bun-what-now?"
                     continue
                     puts "#{name}: It was worth a shot"
+                    continue
                     next
                 else 
                     puts "Hey genius, press 1 or 2!"

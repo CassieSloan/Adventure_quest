@@ -1,6 +1,7 @@
                                                   
 ################################## H O U S E  K E E P I N G ##################################
 require 'colorize'
+require 'lolcat'
 
 require_relative "./place_methods/bar"
 require_relative "./place_methods/town"
