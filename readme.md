@@ -59,7 +59,7 @@ Another mechanic used in Adventure Quest is guessing games. An example of this w
         end
 Again, this adds to the replay value as the princess's number will change each time.        
 #####3. Visually interesting
-I wanted to bring the game to life in an interesting, yet retro kind of way – being confined to the limitations of running through the terminal, I decided to incooperate Ascii art into Adventure Quest. I sourced a variety of silly looking people to stand in for characters and formatted signs for each area to make the experience more immersive and authentic. An example of this feature could be:
+I wanted to bring the game to life in an interesting, yet retro kind of way – being confined to the limitations of running through the terminal, I decided to incooperate Ascii art into Adventure Quest. I sourced a variety of silly looking people to stand in for characters and formatted signs for each area to make the experience more immersive and authentic. 
 
 
 ##User experience
@@ -72,5 +72,24 @@ The users interact with the game by selecting the number of the option they woul
 ![control flow diagram](Assignment_1_control_flow_diagram.jpg)
 
 ##Implementation plan
-[link to Trello board](https://trello.com/invite/b/Swkg7k70/2ca3401b6708375857aa3b2bbfd77226/terminal-application-i)
 
+Tuesday | Wednesday | Thursday | Friday
+------------ | ------------- | ------------- |-------------
+Draft control flow chart  | Assess scope of required documentation | Continue writing program | friday| 
+Establish decisions made by user and outcomes achieved | Finalise control flow chart | Ensure DRY principles are being used 
+Research how to register just the ‘Enter/Return’ key as input | Draft Software Development Plan | Design help/read/me file
+Begin scripting dialogue | Research RNG for game mechanic | Logistics for bash script and formatting in directories
+Research and utilise Ascii elements for aesthetic purposes| Find 3 more gems to use in application - music?? |ss | ss
+Begin writing foundational code | 
+
+- [Trello board](https://trello.com/invite/b/Swkg7k70/2ca3401b6708375857aa3b2bbfd77226/terminal-application-i)
+
+- [Version control with git/github](https://github.com/CassieSloan/Adventure_quest)
+
+- [Error testing]()
+
+help
+bash.sh 
+gems
+rb files
+and packaging
