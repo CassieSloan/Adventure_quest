@@ -36,13 +36,13 @@ continue
 
 ################################## T H E  B E G I N N I N G ##################################
 
-puts "Greg: Hail and well met, traveller!
- 
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- ➢ 1. Um...who are you?
- ➢ 2. Actually, my bus broke down – #Transportnsw did me dirty once again
- ➢ 3. I AM READY FOR AN EPIC ADVENTURE!!
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+puts "Greg: Hail and well met, traveller!"
+puts "" 
+puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+puts " ➢ 1. Um...who are you?"
+puts " ➢ 2. Actually, my bus broke down – #Transportnsw did me dirty once again"
+puts " ➢ 3. I AM READY FOR AN EPIC ADVENTURE!!"
+puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 while true
     welcome_choice = gets.chomp
@@ -84,11 +84,11 @@ end
  *✧･ﾟ:* 　゜゜・　 *:・．゜・ .
  :* 　　 *:･ﾟ✧*:･゜゜・　　・゜.".colorize(:light_blue)
   
- puts " 
-* * * * * * * * * * * * * * * * * * * * * * * 
-*  G R E G  H A S  D I S S A P E A R E D!   * 
-* * * * * * * * * * * * * * * * * * * * * * *".colorize(:white).on_red
- 
+puts ""  
+puts "* * * * * * * * * * * * * * * * * * * * * * *"
+puts "*  G R E G  H A S  D I S S A P E A R E D!   *"
+puts "* * * * * * * * * * * * * * * * * * * * * * *".colorize(:white).on_red
+puts "" 
 puts "psst, it's me Greg. I'm talking to you from the Astral plane. Press 'enter' to continue through your journey."
 continue
 puts "#{name}: Well, that sure was weird. He reminded me of my uncle somehow."
@@ -96,14 +96,15 @@ continue
 ######### A D V E N T U R E  S T A R T S ########
 while true
 
-  puts "#{name}: Now, where should I go?
-   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-   ➢ 1. The bar!                                                           
-   ➢ 2. The town!                                                          
-   ➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. 
-        Dont get ahead of urself u excitable bish
-   ➢ 4. Exit                                                               
-   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+  puts "#{name}: Now, where should I go?"
+  puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+  puts " ➢ 1. The bar!   "                                                        
+  puts " ➢ 2. The town!   "                                                       
+  puts " ➢ 3. The forest! CASSIE WRITE OTHER TWO FIRST AND SEE IF WE HAVE TIME FOR ANOTHER. "
+  puts "      Dont get ahead of urself u excitable bish"
+  puts " ➢ 4. Exit                   "                                            
+  puts " +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
+  
   where_to_go = gets.chomp
   case where_to_go
     when "1"
@@ -127,6 +128,4 @@ while true
     next
     end
 end
-
-  continue
 
