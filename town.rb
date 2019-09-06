@@ -1,4 +1,6 @@
 require 'colorize'
+require 'rainbow'
+require 'crayon'
 
 def continue 
   
@@ -97,7 +99,7 @@ def town_story name
                     puts "#{name}: Yikes, touchy! Let's see what else there is to do"
                     next
                 else 
-                    puts "Hey genius, press 1 or 2!"
+                    puts Crayon.underline_red("Hey genius, press 1, 2 or 3!")
                     next
                 end
         when "2"   ##################### P O T I O N S  S E L L E R  #####################
@@ -249,7 +251,7 @@ def town_story name
                             puts "#{name}: Where to?"
                             next
                         else 
-                            puts "Hey genius, press 1 or 2!"
+                            puts Crayon.underline_red("Hey genius, press 1, 2 or 3!")
                         end
                 elsif potions_choice == "2" ################## D O N T  D R I N K  P O T I O N S   ###############
                     puts "Potions seller: I'm sorry, bun-what-now?"
@@ -258,7 +260,7 @@ def town_story name
                     continue
                     next
                 else 
-                    puts "Hey genius, press 1 or 2!"
+                    puts Crayon.underline_red("Hey genius, press 1, 2 or 3!")
                 end
         when "3" ######## EXIT TOWN ############
             puts "#{name}: Let's head back to where Greg dissapeared..." 

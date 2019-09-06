@@ -1,9 +1,11 @@
                                                   
 ################################## H O U S E  K E E P I N G ##################################
 require 'colorize'
+require 'rainbow'
+require 'crayon'
 
-require_relative "./place_methods/bar"
-require_relative "./place_methods/town"
+require_relative "./bar"
+require_relative "./town"
 
 pid = fork{ exec `afplay desert-dance.mp3`}
 
@@ -19,7 +21,7 @@ def continue
   end
 end
 ################################## T I T L E  S C R E E N ##################################
-puts "
+puts Rainbow("
       █████╗ ██████╗ ██╗   ██╗███████╗███╗   ██╗████████╗██╗   ██╗██████╗ ███████╗     ██████╗ ██╗   ██╗███████╗███████╗████████╗
      ██╔══██╗██╔══██╗██║   ██║██╔════╝████╗  ██║╚══██╔══╝██║   ██║██╔══██╗██╔════╝    ██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
      ███████║██║  ██║██║   ██║█████╗  ██╔██╗ ██║   ██║   ██║   ██║██████╔╝█████╗      ██║   ██║██║   ██║█████╗  ███████╗   ██║   
@@ -32,7 +34,7 @@ puts "
                                               P R E S S  E N T E R                      
                                                 T O   S T A R T                         
 
-                            *.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*"
+                            *.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*:*.*").bg(:lightpink)
 continue
 
 ################################## T H E  B E G I N N I N G ##################################
@@ -58,7 +60,7 @@ while true
       puts "Greg: Wonderful! You're the first person to tell me that all week. It seems the capitalist regions surrounding this land have taken the sense of wonder and magic from their people."
      break
     else 
-       puts "Hey genius, press 1, 2 or 3!"
+       puts Crayon.underline_red("Hey genius, press 1, 2 or 3!")
     next
 end
 end
@@ -127,8 +129,8 @@ while true
       puts "Greg: Later, nerd..."
       break
     else 
-      puts "Hey genius, press 1, 2 or 3!"
-    next
+      puts Crayon.underline_red("Hey genius, press 1, 2 or 3!")
+      next
     end
 end
 

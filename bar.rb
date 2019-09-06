@@ -1,5 +1,6 @@
-
 require 'colorize'
+require 'rainbow'
+require 'crayon'
 
 def continue 
   
@@ -231,8 +232,8 @@ def bar_story name
             puts "Bartender: You would be right"
         break
         else 
-            puts "Hey genius, press 1, 2 or 3!"
-        next
+            puts Crayon.underline_red("Hey genius, press 1, 2 or 3!")
+            next
         end
         end
 

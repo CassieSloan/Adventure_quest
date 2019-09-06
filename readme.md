@@ -2,6 +2,8 @@
 ######Name: Cassie Sloan
 ######Assignment 1: Terminal Application
 ######Application name: Adventure Quest
+[Github](https://github.com/CassieSloan/Adventure_quest)
+
 
 
 ##SOFTWARE DEVELOPMENT PLAN
@@ -59,7 +61,7 @@ Another mechanic used in Adventure Quest is guessing games. An example of this w
         end
 Again, this adds to the replay value as the princess's number will change each time.        
 #####3. Visually interesting
-I wanted to bring the game to life in an interesting, yet retro kind of way – being confined to the limitations of running through the terminal, I decided to incooperate Ascii art into Adventure Quest. I sourced a variety of silly looking people to stand in for characters and formatted signs for each area to make the experience more immersive and authentic. 
+I wanted to bring the game to life in an interesting, yet retro kind of way – being confined to the limitations of running through the terminal, I decided to incooperate Ascii art into Adventure Quest. I sourced a variety of silly looking people to stand in for characters and formatted signs for each area to make the experience more immersive and authentic. Using 'colorize', 'rainbow' and 'crayon' gems, colour is added liberally throughout the application.
 
 
 ##User experience
@@ -94,7 +96,7 @@ Begin writing foundational code | | Finish Bar story and add exit loops
 
 #####Learnings
 - Enter key as input `.empty?`
-- Strings = 0 when get.chomp.to_i
+- Strings = 0 when gets.chomp.to_i
 - Play music `afplay`
 - Delay feed `sleep(2)`
 
@@ -104,12 +106,28 @@ Begin writing foundational code | | Finish Bar story and add exit loops
 
 ***Gems***
 require 'colorize'
+require 'rainbow'
+require 'crayon'
 
 ***Files***
 desert-dance.mp3
 Adventure_Quest.rb
 town.rb
 bar.rb
+bash.sh
+
+***Run***
+1. Install above files
+* Gems = type 'gem install *gem name*' into terminal
+* Files = run bash.sh to install required files
+2. Run program - type 'ruby Adventure_Quest.rb' into terminals
+3. Press enter key
+
+***Features***
+- Personalised name input
+- Visual-novel style game
+- RNG (ranodm number generated) mini games
+- Ambient music 
 
 ***Reference***
 [git/github](https://github.com/CassieSloan/Adventure_quest)
