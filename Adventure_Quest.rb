@@ -77,13 +77,17 @@ name = gets.chomp
     break
   end
 end
-  
+
+sleep (2)
+
  puts " 
  ✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧.
  .・゜゜・　　・゜゜・．゜・.
  ゜゜・✧*: P O O F ! ・゜゜✧*:.
  *✧･ﾟ:* 　゜゜・　 *:・．゜・ .
  :* 　　 *:･ﾟ✧*:･゜゜・　　・゜.".colorize(:light_blue)
+
+ sleep (1)
   
 puts ""  
 puts "* * * * * * * * * * * * * * * * * * * * * * *".colorize(:white).on_red

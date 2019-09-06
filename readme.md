@@ -89,13 +89,15 @@ Begin writing foundational code | | Finish Bar story and add exit loops
 
 ##Status updates/iterations
 
-- Had to insert new 'puts' on each line of multi-line-ascii  code. Otherwise it formatted strangely in the terminal
+- Had to insert new 'puts' on each line of multi-line ascii  code. Otherwise it formatted strangely in the terminal
 - Had to loop initial bartender story into larger BAR story
 
 #####Learnings
-- Learned `.empty?`
+- Enter key as input `.empty?`
 - Strings = 0 when get.chomp.to_i
-- Learned `afplay`
+- Play music `afplay`
+- Delay feed `sleep(2)`
+
 
 
 ##Help
